@@ -1,3 +1,19 @@
+##installing database
+sudo rpm -Uvh https://dev.mysql.com/get/mysql57-community-release-el7-11.noarch.rpm
+
+sudo rpm --import https://repo.mysql.com/RPM-GPG-KEY-mysql-2022
+
+sudo yum install -y mysql-community-server
+
+sudo systemctl enable mysqld
+
+sudo systemctl start mysqld
+
+sudo grep 'temporary password' /var/log/mysqld.log
+
+sudo mysql_secure_installation
+
+
 # ltibloodbank
 
 # Setting up Ubuntu Machine
