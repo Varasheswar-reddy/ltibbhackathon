@@ -5,7 +5,7 @@ class script{
 
         public function __construct(){
 
-                $server = "mysqldb";
+                $server = "mysqldb.cqjso4oooi09.us-east-1.rds.amazonaws.com";
                 $user = "root";
                 $pass = "admin123";
                 $db = "customers";
